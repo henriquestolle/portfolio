@@ -103,13 +103,14 @@ header {
 
 main {
   color: white;
+  background: url("./assets/fundo-section-1.png");
 }
 
 /* Quem Sou? */
 
 #section-quem-sou {
   height: auto;
-  background: url("./assets/fundo-section-1.png");
+
   display: flex;
   flex-direction: column;
   justify-content: center;
