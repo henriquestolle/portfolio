@@ -108,6 +108,50 @@ main {
 /* Quem Sou? */
 
 #section-quem-sou {
-  height: 400px;
+  height: auto;
   background: url("./assets/fundo-section-1.png");
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#title-quem-sou {
+  margin: 0px 10px 10px 10px;
+}
+
+#h1-quem-sou {
+  padding: 10px;
+  margin: 0px 0px 10px 0px;
+  font-weight: 100;
+  font-size: 1.6em;
+  color: rgb(0, 255, 225);
+}
+
+#img-div {
+  text-align: center;
+  margin: 0px 0px -40px 0px;
+}
+
+#img-quem-sou {
+  max-width: 180px;
+  max-height: 180px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+#coteiner-p {
+  display: flex;
+  flex-direction: column;
+  margin: 40px 0px 0px 0px;
+  padding: 40px;
+  gap: 30px;
+}
+
+#coteiner-p > p {
+  background-color: #ffffff;
+  color: #000000;
+  text-align: center;
+  border-radius: 5px;
+  padding: 10px;
 }
