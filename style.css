@@ -8,10 +8,6 @@
   font-family: "Hammersmith One", serif;
 }
 
-body {
-  background-color: #1c1c1c;
-}
-
 header {
   background: linear-gradient(to bottom right, #1c1c1c, #010028);
   height: auto;
@@ -19,78 +15,54 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 25px;
+  gap: 35px;
 }
 
 /* Menu Burger */
-.menu-container {
+.menu-icon {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: end;
-  margin: 20px 12px 0px 0px;
-}
-
-.burger-menu {
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
+  justify-content: space-between;
   width: 30px;
+  height: 21px;
   cursor: pointer;
+  margin: 15px 0px 0px 20px;
 }
 
-.burger-menu div {
-  width: 100%;
+.bar {
   height: 3px;
   background-color: white;
-  border-radius: 2px;
-  transition: transform 0.3s ease, opacity 0.3s ease;
+  width: 100%;
 }
 
-.menu-items {
+.menu {
   display: none;
-  flex-direction: column;
-  gap: 10px;
-  position: relative;
-  margin-top: 20px;
-  background: white;
-  color: black;
+  background-color: #ffffff;
+  color: white;
   padding: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-}
-
-.menu-items a {
-  text-decoration: none;
-  color: black;
-  font-size: 16px;
-  font-weight: bold;
   text-align: center;
+  margin-top: -35px;
 }
 
-.menu-items a:hover {
-  color: #010028;
-}
-
-.menu-container.active .menu-items {
+.menu-content {
   display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
-.menu-container.active .burger-menu div:nth-child(1) {
-  transform: translateY(10px) rotate(45deg);
+.menu-content > a {
+  color: #000000;
+  text-decoration: none;
 }
 
-.menu-container.active .burger-menu div:nth-child(2) {
-  opacity: 0;
-}
-
-.menu-container.active .burger-menu div:nth-child(3) {
-  transform: translateY(-10px) rotate(-45deg);
+.menu.show {
+  display: block;
 }
 
 /* Abaixo do menu burger */
 #title-name {
   text-align: center;
-  font-size: 1.4em;
+  font-size: 1.7em;
   font-weight: 300;
 }
 
@@ -109,17 +81,33 @@ header {
   padding: 0px 0px 30px 0px;
 }
 
-#div-button-head > button {
+#div-button-head > a {
   color: white;
-  padding: 6px 40px;
+  padding: 8px 50px;
   background-color: #1e88e5;
   border: none;
   text-align: center;
   cursor: pointer;
-  font-size: 0.9em;
+  font-size: 1em;
+  font-weight: lighter;
+  letter-spacing: 1.1px;
+  text-decoration: none;
 }
 
-#div-button-head > button:hover {
+#div-button-head > a:hover {
   transition: 0.1;
   background-color: #1467af;
+}
+
+/* Main */
+
+main {
+  color: white;
+}
+
+/* Quem Sou? */
+
+#section-quem-sou {
+  height: 400px;
+  background: url("./assets/fundo-section-1.png");
 }

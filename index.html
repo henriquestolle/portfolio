@@ -5,17 +5,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <script src="./script.js"></script>
     <title>Portfólio Pessoal</title>
 </head>
 
 <body>
     <header>
-        <div class="menu-container">
-            <div class="burger-menu" onclick="toggleMenu()">
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
+        <div class="menu-icon" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
         </div>
         <div>
             <h1 id="title-name"><span style="color: #2196f3;">&lt;h&gt;</span>Henrique Silva Stolle<span
@@ -28,20 +27,41 @@
             </div>
         </div>
         <div id="div-button-head">
-            <button>Contato</button>
+            <a href="mailto:stollehenriquecomercial@gmail.com" target="_blank" rel="noopener noreferrer">Contato</a>
         </div>
-        <div class="menu-items">
-            <a href="#">Quem sou?</a>
-            <a href="#">Soft Skills</a>
-            <a href="#">Hard Skills</a>
-            <a href="#">Contato</a>
+        <div class="menu" id="menu">
+            <div class="menu-content">
+                <a href="#">Quem sou?</a>
+                <a href="#">Soft Skills</a>
+                <a href="#">Hard Skills</a>
+                <a href="#">Contato</a>
+            </div>
         </div>
     </header>
+    <main>
+        <section id="section-quem-sou">
+            <div>
+                <div id="title-quem-sou">
+                    <div>
+                        <h1>QUEM SOU?</h1>
+                    </div>
+                    <div>
+                        <p>Henrique Silva Stolle, 18 anos</p>
+                        <p>Aluno de Ciência e Tecnologia na UFSC de Joinville & Recém-formado como Técnico em
+                            Desenvolvimento de Sistemas pelo SENAI (2024), com paixão por tecnologia e aprendizado
+                            constante. </p>
+                        <p>Busco minha primeira oportunidade como estagiário ou trainee para aplicar meus conhecimentos
+                            e contribuir com soluções inovadoras.</p>
+                    </div>
+                </div>
+                <div>
+                    <img src="" alt="" srcset="">
+                </div>
+            </div>
+
+        </section>
+    </main>
 </body>
 
-</html>
-<script>
-    const burgerMenu = document.getElementById("burgerMenu");
-    const menuItems = document.getElementById("menuItems");
 
-</script>
+</html>
