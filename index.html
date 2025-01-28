@@ -2,24 +2,46 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Portfólio Pessoal</title>
 </head>
 
 <body>
-    <div style="position: relative; width: 100%; height: 0; padding-top: 56.2225%;
- padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
- border-radius: 8px; will-change: transform;">
-        <iframe loading="lazy"
-            style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
-            src="https://www.canva.com/design/DAGdWeCjGDc/dQkt6LRAUkzz4fjTsdWPWw/view?embed"
-            allowfullscreen="allowfullscreen" allow="fullscreen">
-        </iframe>
-    </div>
-    <a href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGdWeCjGDc&#x2F;dQkt6LRAUkzz4fjTsdWPWw&#x2F;view?utm_content=DAGdWeCjGDc&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link"
-        target="_blank" rel="noopener">Inserir um subtítulo</a> de Henrique Silva Stolle
+    <header>
+        <div class="menu-container">
+            <div class="burger-menu" onclick="toggleMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+        <div>
+            <h1 id="title-name"><span style="color: #2196f3;">&lt;h&gt;</span>Henrique Silva Stolle<span
+                    style="color: #2196f3;">&lt;/h&gt;</span></h1>
+        </div>
+        <div>
+            <div id="data-subtitle-head">
+                <p>DESENVOLVEDOR DE SISTEMAS</p>
+                <p>WEB | MOBILE</p>
+            </div>
+        </div>
+        <div id="div-button-head">
+            <button>Contato</button>
+        </div>
+        <div class="menu-items">
+            <a href="#">Quem sou?</a>
+            <a href="#">Soft Skills</a>
+            <a href="#">Hard Skills</a>
+            <a href="#">Contato</a>
+        </div>
+    </header>
 </body>
 
 </html>
+<script>
+    const burgerMenu = document.getElementById("burgerMenu");
+    const menuItems = document.getElementById("menuItems");
+
+</script>
