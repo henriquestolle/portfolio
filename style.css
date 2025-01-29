@@ -384,7 +384,7 @@ main {
 }
 
 #title-hard-skills > p {
-  color: #000000;
+  color: #010028;
   text-align: center;
   margin: 0px 30px 50px 30px;
 }
@@ -404,6 +404,7 @@ main {
 }
 
 .skills-list > p {
+  color: rgb(9, 135, 190);
   margin: 0px 0px 30px 0px;
 }
 
