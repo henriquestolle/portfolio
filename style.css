@@ -337,10 +337,10 @@ main {
 #section-soft-skills {
   display: flex;
   justify-content: center;
-  margin: 30px 0px 0px 0px;
+  margin: 50px 0px 50px 0px;
 }
 
-#title-soft-skills {
+#title-soft-skills > h5 {
   text-align: center;
   padding: 0px 0px 20px 0px;
   margin: 0px 0px 0px 0px;
@@ -361,8 +361,77 @@ main {
 .list-soft-skills > li {
   font-family: "Courier New", Courier, monospace;
 }
+
+/* HARD SKILLS */
+
+#section-hard-skills {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0px 50px 0px;
+}
+
+#general {
+}
+
+#title-hard-skills > h5 {
+  text-align: center;
+  padding: 0px 0px 20px 0px;
+  font-weight: 100;
+  font-size: 1.3em;
+  color: #010028;
+}
+
+#title-hard-skills > p {
+  color: #000000;
+  text-align: center;
+  margin: 0px 30px 50px 30px;
+}
+
+#conteiner-skills-list {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.skills-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #000000;
+}
+
+.skills-list > p {
+  margin: 0px 0px 30px 0px;
+}
+
+.skills-list > ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 20px;
+}
+
+#btn-download {
+  color: #ffffff;
+  background-color: rgb(9, 135, 190);
+  text-decoration: none;
+  margin: 50px 0px 0px 0px;
+  padding: 10px;
+  border-radius: 3px;
+  text-align: center;
+}
+
+#btn-download:hover {
+  animation: shake 0.3s ease-in-out;
+  background-color: rgb(27, 157, 213);
+}
+
 /* Footer */
 footer {
   color: #000000;
   background-color: #ffffff;
+  margin: 20px 30px 0px 30px;
 }
