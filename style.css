@@ -148,14 +148,13 @@ header {
 /* Main */
 
 main {
-  color: white;
+  color: rgb(199, 199, 199);
 }
 
 /* Quem Sou? */
 
 #section-quem-sou {
   height: auto;
-
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -166,23 +165,33 @@ main {
   margin: 0px 10px 10px 10px;
 }
 
-#h1-quem-sou {
-  padding: 10px;
-  margin: 0px 0px 10px 0px;
+#h5-quem-sou {
+  text-align: center;
+  padding: 40px 0px 40px 0px;
+  margin: 0px 0px 0px 0px;
   font-weight: 100;
-  font-size: 1.6em;
+  font-size: 1.5em;
   color: rgb(58, 167, 240);
 }
 
-#img-div {
+#trajetoria-h6 {
+  color: rgb(0, 0, 0);
+  font-size: 0.9em;
+  font-weight: 300;
   text-align: center;
+  margin: -25px 0px 40px 0px;
+}
+
+#img-div {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
   margin: 0px 0px -40px 0px;
 }
 
 #img-quem-sou {
-  max-width: 180px;
-  max-height: 180px;
-  border-radius: 10px;
+  max-height: 100px;
+  border-radius: 50%;
   text-align: center;
 }
 
@@ -195,11 +204,11 @@ main {
 }
 
 #coteiner-p > p {
-  background-color: #ffffff;
-  color: #000000;
+  color: #5f5f5f;
   text-align: center;
-  border-radius: 5px;
   padding: 10px;
+  font-weight: 100;
+  font-family: "Courier New", Courier, monospace;
 }
 
 /* Footer */
