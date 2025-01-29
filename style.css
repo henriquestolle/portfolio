@@ -95,7 +95,7 @@ header {
 }
 
 .menu-content > a {
-  color: #000000;
+  color: #010028;
   text-decoration: none;
 }
 
@@ -209,6 +209,56 @@ main {
   padding: 10px;
   font-weight: 100;
   font-family: "Courier New", Courier, monospace;
+}
+
+/* PERFIL */
+#section-perfil {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#title-perfil {
+  margin: 0px 10px 10px 10px;
+}
+
+#h5-perfil {
+  text-align: center;
+  padding: 0px 0px 20px 0px;
+  margin: 0px 0px 0px 0px;
+  font-weight: 100;
+  font-size: 1.3em;
+  color: #010028;
+}
+
+#perfil-description {
+  color: #5f5f5f;
+  text-align: center;
+  font-weight: 200;
+  font-size: 1em;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.info-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  list-style: none;
+  margin: 30px 0px 0px 30px;
+}
+
+.info-list > li > strong {
+  color: #010028;
+  font-weight: 200;
+  letter-spacing: 1px;
+}
+.info-list > li > span {
+  display: block;
+  color: #818181;
+  font-weight: 200;
+  letter-spacing: 1px;
 }
 
 /* Footer */
