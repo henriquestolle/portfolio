@@ -61,6 +61,18 @@ header {
   background-color: #010028;
 }
 
+/* Rolagem suave */
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 /* Menu Burger */
 .menu-icon {
   display: flex;
@@ -72,10 +84,23 @@ header {
   margin: 15px 0px 0px 20px;
 }
 
+.menu-icon.active .bar:nth-child(1) {
+  transform: translateY(9px) rotate(45deg);
+}
+
+.menu-icon.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-icon.active .bar:nth-child(3) {
+  transform: translateY(-9px) rotate(-45deg);
+}
+
 .bar {
   height: 3px;
   background-color: white;
   width: 100%;
+  transition: ease-in-out;
 }
 
 .menu {
