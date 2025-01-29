@@ -45,6 +45,10 @@
 }
 
 /* Rolagem vertical apenas */
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   overflow-x: hidden;
   overflow-y: scroll;
