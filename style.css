@@ -20,6 +20,36 @@
   }
 }
 
+/* barra de rolagem transparente */
+/* Para navegadores baseados em WebKit */
+::-webkit-scrollbar {
+  width: 8px; /* Define a largura da barra de rolagem */
+}
+
+::-webkit-scrollbar-track {
+  background: transparent; /* Deixa o fundo da barra transparente */
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(
+    0,
+    0,
+    0,
+    0.2
+  ); /* Define uma cor semi-transparente para o "polegar" da barra */
+  border-radius: 10px; /* Arredonda as bordas */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.3); /* Altera a opacidade ao passar o mouse */
+}
+
+/* Rolagem vertical apenas */
+body {
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
 /* SVG */
 .intro-social {
   display: flex;
@@ -61,6 +91,17 @@ header {
   background-color: #010028;
 }
 
+.conteiner-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px 20px 0px 20px;
+}
+
+.conteiner-header > p {
+  text-align: center;
+}
+
 /* Rolagem suave */
 .fade-in {
   opacity: 0;
@@ -78,10 +119,10 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
   width: 30px;
   height: 21px;
   cursor: pointer;
-  margin: 15px 0px 0px 20px;
 }
 
 .menu-icon.active .bar:nth-child(1) {
@@ -107,7 +148,7 @@ header {
   display: none;
   background-color: #ffffff;
   color: white;
-  padding: 10px;
+  padding: 10px 0px;
   text-align: center;
   margin-top: -20px;
   transition: 0.2s;
