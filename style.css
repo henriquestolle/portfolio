@@ -1,6 +1,49 @@
 @import "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
+/* Animação */
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-5px);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+  75% {
+    transform: translateX(-5px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* SVG */
+.intro-social {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  list-style: none;
+  gap: 20px;
+}
+
+.icon-svg {
+  fill: #ffffff;
+}
+
+.icon-svg:hover {
+  fill: #006fa7;
+  transition: 0.2s;
+}
+
+.icon-2x {
+  width: 28px;
+  height: 28px;
+}
+
+/* Código CSS */
 * {
   margin: 0;
   padding: 0;
@@ -9,13 +52,13 @@
 }
 
 header {
-  background: linear-gradient(to bottom right, #1c1c1c, #010028);
   height: auto;
   color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 35px;
+  background-color: #010028;
 }
 
 /* Menu Burger */
@@ -41,7 +84,8 @@ header {
   color: white;
   padding: 10px;
   text-align: center;
-  margin-top: -35px;
+  margin-top: -20px;
+  transition: 0.2s;
 }
 
 .menu-content {
@@ -56,6 +100,7 @@ header {
 }
 
 .menu.show {
+  transition: 0.2s;
   display: block;
 }
 
@@ -95,6 +140,7 @@ header {
 }
 
 #div-button-head > a:hover {
+  animation: shake 0.3s ease-in-out;
   transition: 0.1;
   background-color: #1467af;
 }
@@ -103,7 +149,6 @@ header {
 
 main {
   color: white;
-  background: url("./assets/fundo-section-1.png");
 }
 
 /* Quem Sou? */
@@ -126,7 +171,7 @@ main {
   margin: 0px 0px 10px 0px;
   font-weight: 100;
   font-size: 1.6em;
-  color: rgb(0, 255, 225);
+  color: rgb(58, 167, 240);
 }
 
 #img-div {
@@ -155,4 +200,10 @@ main {
   text-align: center;
   border-radius: 5px;
   padding: 10px;
+}
+
+/* Footer */
+footer {
+  color: #000000;
+  background-color: #ffffff;
 }
