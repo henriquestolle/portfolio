@@ -103,6 +103,7 @@ header {
   justify-content: center;
   gap: 35px;
   background-color: #010028;
+  clip-path: ellipse(130% 90% at 50% 10%);
 }
 
 .conteiner-header {
