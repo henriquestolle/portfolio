@@ -61,6 +61,7 @@ body {
   text-decoration: none;
   list-style: none;
   gap: 20px;
+  padding: 0px 0px 50px 0px;
 }
 
 .icon-svg {
@@ -204,6 +205,10 @@ header {
   font-weight: 300;
 }
 
+#data-subtitle-head > p {
+  text-align: center;
+}
+
 #div-button-head {
   display: flex;
   flex-direction: column;
@@ -244,6 +249,7 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  border-radius: 10px;
 }
 
 #title-quem-sou {
@@ -264,7 +270,7 @@ main {
   font-size: 0.9em;
   font-weight: 300;
   text-align: center;
-  margin: -25px 0px 40px 0px;
+  margin: -25px 10px 40px 10px;
 }
 
 #img-div {
@@ -324,6 +330,7 @@ main {
   font-weight: 200;
   font-size: 1em;
   font-family: "Courier New", Courier, monospace;
+  margin: 0px 20px;
 }
 
 .info-list {
@@ -331,7 +338,7 @@ main {
   flex-direction: column;
   gap: 30px;
   list-style: none;
-  margin: 30px 0px 0px 30px;
+  margin: 5%;
 }
 
 .info-list > li > strong {
@@ -471,8 +478,9 @@ footer {
   gap: 20px;
 }
 
-#direitos-reservados > p {
+#texto-direitos-reservados {
   text-align: center;
   font-size: 0.8em;
+  font-weight: 100;
   padding: 20px 0px;
 }
