@@ -282,9 +282,13 @@ main {
 }
 
 #img-quem-sou {
-  max-height: 100px;
+  max-height: 200px;
+  width: auto;
   border-radius: 50%;
-  text-align: center;
+  display: block;
+  margin: 0 auto;
+  object-fit: cover;
+  border: 3px solid black;
 }
 
 #coteiner-p {
@@ -296,7 +300,7 @@ main {
 }
 
 #coteiner-p > p {
-  color: #5f5f5f;
+  color: black;
   text-align: center;
   padding: 10px;
   font-weight: 100;
@@ -326,7 +330,7 @@ main {
 }
 
 #perfil-description {
-  color: #5f5f5f;
+  color: black;
   text-align: center;
   font-weight: 200;
   font-size: 1em;
@@ -361,6 +365,13 @@ main {
   margin: 50px 0px 50px 0px;
 }
 
+.card {
+  background-color: rgba(241, 241, 241, 0.756);
+  padding: 20px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
 #title-soft-skills > h5 {
   text-align: center;
   padding: 0px 0px 20px 0px;
@@ -373,10 +384,16 @@ main {
 .list-soft-skills {
   display: flex;
   flex-direction: column;
+  padding: 10px;
   gap: 10px;
-  list-style: none;
-  text-align: center;
-  color: #303030;
+  list-style: disc;
+  text-align: left;
+  color: #000000;
+}
+
+.list-soft-skills > li::marker {
+  color: rgb(0, 123, 255); /* Muda a cor da bolinha */
+  font-size: 1.2em; /* Ajusta o tamanho da bolinha */
 }
 
 .list-soft-skills > li {
