@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+section,
+header,
+footer {
+  max-width: 100vw;
+}
+
+header {
+  width: 100vw;
+  left: 0;
+}
+
+.line-clamp-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Estilizando a barra de rolagem para navegadores WebKit (Chrome, Edge, Safari, Opera) */
+::-webkit-scrollbar {
+  width: 8px; /* Largura da barra de rolagem */
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f100; /* Cor do fundo da barra */
+  border-radius: 10px; /* Bordas arredondadas */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2c3e50; /* Cor da alça da barra */
+  border-radius: 10px; /* Bordas arredondadas */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #1a252f; /* Cor ao passar o mouse */
+}
