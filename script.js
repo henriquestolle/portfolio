@@ -1,18 +1,43 @@
-const menuBtn = document.getElementById("menu-btn");
-const menu = document.getElementById("menu");
-const closeMenu = document.getElementById("close-menu");
+window.addEventListener("scroll", function () {
+  const scrollBtn = document.getElementById("scrollToTopBtn");
+  if (window.pageYOffset > 200) {
+    scrollBtn.classList.remove("hidden");
+    scrollBtn.style.opacity = 1;
+    scrollBtn.style.transform = "translateY(0)";
+  } else {
+    scrollBtn.classList.add("hidden");
+    scrollBtn.style.opacity = 0;
+    scrollBtn.style.transform = "translateY(20px)";
+  }
+});
 
-function toggleMenu() {
-  menu.classList.toggle("hidden");
+// Ao clicar, a página rola suavemente até o topo
+document
+  .getElementById("scrollToTopBtn")
+  .addEventListener("click", function () {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+
+// Dark-mode
+const darkModeToggle = document.getElementById("darkModeToggle");
+const body = document.body;
+
+// Verifica se o dark mode foi ativado anteriormente e mantém a configuração
+if (localStorage.getItem("darkMode") === "enabled") {
+  body.classList.add("dark");
 }
 
-menuBtn.addEventListener("click", toggleMenu);
-closeMenu.addEventListener("click", toggleMenu);
+darkModeToggle.addEventListener("click", () => {
+  body.classList.toggle("dark");
 
-function toggleText(id, button) {
-  const paragraph = document.getElementById(id);
-  const isClamped = paragraph.classList.contains("line-clamp-3");
-  paragraph.classList.toggle("line-clamp-3");
-  paragraph.classList.toggle("overflow-hidden");
-  button.textContent = isClamped ? "Ver menos" : "Ver mais";
-}
+  // Salva a configuração para que o dark mode seja mantido após recarregar a página
+  if (body.classList.contains("dark")) {
+    localStorage.setItem("enabled", "darkMode");
+    darkModeToggle.innerHTML =
+      '<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5"><path stroke-linecap="round" d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z" /></svg>';
+  } else {
+    localStorage.removeItem("darkMode");
+    darkModeToggle.innerHTML =
+      '<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="black" class="w-5"><path stroke-linecap="round" d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z" /></svg>';
+  }
+});
